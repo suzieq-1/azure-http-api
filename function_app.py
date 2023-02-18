@@ -1,6 +1,6 @@
 import azure.functions as func
 import logging
-from urllib.parse import parse_qs
+#from urllib.parse import parse_qs
 
 # Load the azure class
 app = func.FunctionApp()
