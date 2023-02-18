@@ -21,7 +21,7 @@ def upload(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('File: %s' % file)
 
     # get the HTTP GET value from the page submit, call it anything you want
-    camid = req.form.get('camid')
+    camid = req.params.get('camid')
     logging.info('CamID: %s' % camid)
 
     # A way of processing multiple files, also smart to do some checking
